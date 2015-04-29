@@ -7,6 +7,9 @@
   "installed": {
     "node/node.d.ts": {
       "commit": "00e7f3fede5f2df55b56c72f40a144824f0f0bfa"
+    },
+    "googlemaps/google.maps.d.ts": {
+      "commit": "f27b5185c9948be1a56332baedcb808b147d95f3"
     }
   }
 }

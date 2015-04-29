@@ -6,8 +6,8 @@ var connect = require("connect")
     ;
 
 var app = connect();
-app.use(serveStatic(__dirname + "/static", {
-    "index": ["index.html"]
+app.use(serveStatic(__dirname, {
+    "index": ["static/index.html"]
 }));
 app.use(compression());
 

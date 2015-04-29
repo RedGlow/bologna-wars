@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test</title>
+        <title>Bologna Wars</title>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <script>
             document.write('<script src="' + window.location.protocol + '//' + window.location.hostname + ':11337/livereload.js"><' + '/script>');
         </script>
+        <script src="client.js"></script> 
+        <style>
+            html, body, #map-canvas {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map-canvas {
+                height: 1000px;
+            }
+        </style>
     </head>
     <body>
-        <p>Da test!</p>
+        <div id="map-canvas"></div>
     </body>
 </html>

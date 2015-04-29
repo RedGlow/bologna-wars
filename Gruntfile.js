@@ -90,6 +90,9 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
+        },
+        clean: {
+            build: ["build", "typings", ".tscache"]
         }
     });
 
@@ -100,6 +103,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-nodemon");
     grunt.loadNpmTasks("grunt-concurrent");
     grunt.loadNpmTasks("grunt-contrib-copy");
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['tslint', 'ts', 'copy']);
     grunt.registerTask('serve', ['default', 'concurrent:watchers']);
